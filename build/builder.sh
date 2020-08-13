@@ -3,7 +3,7 @@
 declare -A image
 
 for arch in amd64 arm64 ; do
-    buildah bud -t vpetrigo/az-python-agent:${VER_TAG}-$arch --override-arch $arch --iidfile iid -f .. .
+    buildah bud -t vpetrigo/az-python-agent:${VER_TAG}-$arch --override-arch $arch --iidfile iid .
     image[$arch]=$(cat iid)
     rm iid
 done
