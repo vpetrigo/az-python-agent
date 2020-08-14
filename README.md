@@ -29,7 +29,6 @@ Template of `.env` file available [here](templates/.env)
 - `buildah` package required
 - update `Dockerfile`
 - update `build/builder.sh` to represent your image naming, etc.
-- move to `build/` directory
-- run `builder.sh`
+- run `build/builder.sh`
 
 [0.1]: https://github.com/vpetrigo/az-python-agent/releases/tag/0.1
