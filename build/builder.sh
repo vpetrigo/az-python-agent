@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ -z "${VER_TAG+x}" ]]; then
+    echo "Please set up VER_TAG variable"
+    exit 2
+fi
+
 declare -A image
 
 for arch in amd64 arm64 ; do
